@@ -43,12 +43,14 @@
         <div style="padding:3px">
             订单编号&nbsp;<input class="easyui-textbox" name="search_oid"
                                  id="search_oid" style="width:110px" />
+
+<%--        <div style="padding:3px">--%>
+            &nbsp;&nbsp;&nbsp;&nbsp;客户名称&nbsp;<input style="width:115px;" id="search_uid"
+                                 class="easyui-combobox" value="0" name="search_uid"
+                                 data-options="valueField:'id',textField:'userName',url:'userinfo/getValidUser'">&nbsp;&nbsp;
         </div>
         <div style="padding:3px">
-            客户名称&nbsp;<input style="width:115px;" id="search_uid"
-                                 class="easyui-combobox" value="0" name="search_uid"
-                                 data-options="valueField:'id',textField:'userName',url:'userinfo/getValidUser'">&nbsp;&nbsp;&nbsp;
-            订单状态&nbsp;<select id="search_status" class="easyui-combobox" name="search_status" style="width:115px;">
+        订单状态&nbsp;<select id="search_status" class="easyui-combobox" name="search_status" style="width:115px;">
             <option value="请选择" selected>请选择</option>
             <option value="未付款">未付款</option>
             <option value="已付款">已付款</option>

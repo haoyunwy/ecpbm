@@ -33,42 +33,44 @@
 <div id="searchtb_productinfo" style="padding: 2px 5px;">
     <form id="searchForm_productinfo" method="post">
         <div style="padding: 3px">
-            商品编号&nbsp;&nbsp;<input class="easyui-textbox"
+            编号&nbsp;<input class="easyui-textbox"
                        name="productinfo_search_code" id="productinfo_search_code"
-                       style="width: 90px" />
-        </div>
+                       style="width: 60px" />
 
-        <div style="padding: 3px">
-            商品名称&nbsp;&nbsp;
+
+
+           名称
             <input class="easyui-textbox"
                    name="productinfo_search_name" id="productinfo_search_name"
-                   style="width: 90px" />
+                   style="width: 60px" />
 
-            &nbsp;&nbsp;商品类型&nbsp;&nbsp;
+            类型
             <input
                     style="width: 90px;" id="productinfo_search_tid"
                     class="easyui-combobox" name="productinfo_search_tid"
                     data-options="valueField:'id',textField:'name',url:'type/getType/1'"
                     value="0"/>
 
-            &nbsp;&nbsp; 商品品牌&nbsp;&nbsp;
+           品牌
             <input
                     class="easyui-textbox" name="productinfo_search_brand"
-                    id="productinfo_search_brand" style="width:90px" />
+                    id="productinfo_search_brand" style="width:60px" />
 
-            &nbsp;&nbsp;价格:
+            &nbsp;价格:
             <input class="easyui-numberbox"
                    name="productinfo_search_priceFrom"
-                   id="productinfo_search_priceFrom" style="width: 50px;" />
+                   id="productinfo_search_priceFrom" style="width: 30px;" />
             ~ <input
                 class="easyui-numberbox" name="productinfo_search_priceTo"
-                id="productinfo_search_priceTo" style="width: 50px;" />
-            &nbsp;
+                id="productinfo_search_priceTo" style="width: 30px;" />
+
 
             <a href="javascript:void(0)" class="easyui-linkbutton"
                iconCls="icon-search" plain="true" onclick="searchProduct()">查找</a>
         </div>
+
     </form>
+
 </div>
 
 <%--<!-- 添加商品信息对话框 -->--%>

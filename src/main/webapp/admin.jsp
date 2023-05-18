@@ -8,7 +8,6 @@
 <head>
 
     <title>后台管理首页面</title>
-
     <link href="EasyUI/themes/default/easyui.css" rel="stylesheet"
           type="text/css" />
     <link href="EasyUI/themes/icon.css" rel="stylesheet" type="text/css" />
@@ -19,21 +18,21 @@
 </head>
 
 <body class="easyui-layout">
-<div data-options="region:'north',border:false"
-     style="height: 60px; background: #B3DFDA; padding: 10px">
-    <div align="left">
-        <div style="font-family: Microsoft YaHei; font-size: 16px;">电商平台后台管理系统</div>
-    </div>
-    <div align="right">
-        <font color="#00008b">${sessionScope.admin.name}的管理空间</font>
-    </div>
-</div>
+<%--<div data-options="region:'north',border:false"--%>
+<%--     style="height: 60px; background: #B3DFDA; padding: 10px">--%>
+<%--    <div align="left">--%>
+<%--        <div style="font-family: Microsoft YaHei; font-size: 16px;">电商平台后台管理系统</div>--%>
+<%--    </div>--%>
+<%--    <div align="right">--%>
+<%--        <font color="#00008b">${sessionScope.admin.name}的管理空间</font>--%>
+<%--    </div>--%>
+<%--</div>--%>
 <div data-options="region:'west',split:true,title:'功能菜单'"
      style="width: 180px">
     <ul id="tt"></ul>
 </div>
 <div data-options="region:'south',border:false"
-     style="height: 50px; background: #A9FACD; padding: 10px; text-align: center">五月雨</div>
+     style="height:30px; background: #A9FACD; padding: 10px; text-align: center">五月雨</div>
 <div data-options="region:'center'">
     <div id="tabs" data-options="fit:true" class="easyui-tabs"
          style="width: 500px; height: 250px;"></div>

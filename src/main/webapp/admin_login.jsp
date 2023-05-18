@@ -15,19 +15,19 @@
 <body>
 
 <div id="adminLoginDlg" class="easyui-dialog"
-     style="left: 350px; top: 150px;width: 300px;height: 200px"
+     style="position: center;width: 300px;height: 200px"
      data-options="title:'后台登录',buttons:'#bb',modal:true">
     <form id="adminLoginForm" method="post">
         <table style="margin:20px;font-size: 13px;">
             <tr>
                 <th >用户名</th>
                 <td><input class="easyui-textbox" type="text" id="name"
-                           name="name" data-options="required:true" value="zhangsan"></input></td>
+                           name="name" data-options="required:true" ></input></td>
             </tr>
             <tr>
                 <th>密码</th>
                 <td><input class="easyui-textbox" type="text" id="pwd"
-                           name="pwd" data-options="required:true" value="hugt1234"></input></td>
+                           name="pwd" data-options="required:true"></input></td>
             </tr>
         </table>
     </form>
